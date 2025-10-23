@@ -41180,6 +41180,7 @@ xref: Origin: "W"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:01622 ! monohydroxylated tryptophan
+is_a: MOD:00425 ! monohydroxylated residue
 
 [Term]
 id: MOD:02107
@@ -41262,6 +41263,7 @@ xref: Origin: "L"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:01411 ! monohydroxylated leucine
+is_a: MOD:00425 ! monohydroxylated residue
 
 [Term]
 id: MOD:02112
