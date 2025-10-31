@@ -41286,7 +41286,6 @@ xref: Origin: "W"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
-is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
@@ -41308,7 +41307,6 @@ xref: Origin: "W"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
-is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
@@ -41330,7 +41328,6 @@ xref: Origin: "W"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
-is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
@@ -41354,7 +41351,6 @@ xref: Origin: "W"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
-is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
