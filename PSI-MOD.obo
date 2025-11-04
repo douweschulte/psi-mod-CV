@@ -41240,6 +41240,7 @@ xref: Unimod: "Unimod:35"
 is_a: MOD:02116 ! monohydroxylated phenylalanine
 is_a: MOD:02099 ! residue modified by radical hydroxylation
 
+[Term]
 id: MOD:02104
 name: 4-hydroxy-L-phenylalanine
 def: "A protein modification that effectively substitutes a hydroxy group at position 4 of L-phenylalanine" [PubMed:7408053]
