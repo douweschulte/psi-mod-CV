@@ -21,7 +21,11 @@ The present repository is replacing the previous location at SourceForge CVS sit
 
 # Annotation rules
 
-Modifications are always uncharged.
+Modifications are always uncharged. Naturally occuring cross-linkers are allowed, but cross-linkers added in the experiment should be added to XL-MOD. Modifications should form a tree of increasing specificity which allows users to encode the exact level of specificity known.
+
+```
+oxidized residue -> hydroxylated residue -> hydroxylated arginine -> 4-hydroxy-L-arginine
+```
 
 ## Mandatory keys
 - `id` the identifier (MOD:XXXXX).
@@ -30,7 +34,7 @@ Modifications are always uncharged.
   - Name is final product (not a reaction description):`methylated asparagine` and not `arginine methylation`
   -  Can include a precision about origin residue, in parentheses, to remove
 ambiguity: `2-pyrrolidone-5-carboxylic acid (Glu)`
-- `def` describe the modification. After the def any cross identifiers can be listed.These are ids from other databases or ontologies that describe the same modification, or identifiers for papers describing this modification. Common cross references are to PubMed, RESID, ChEBI. Unimod should not be references as this will be listed in the `xref`. Exmple descriptions: 
+- `def` describe the modification. After the def any cross identifiers can be listed.These are ids from other databases or ontologies that describe the same modification, or identifiers for papers describing this modification. Common cross references are to PubMed, RESID, ChEBI, RHEA, uniprot ptm-list. Unimod should not be references as this will be listed in the `xref`. Exmple descriptions: 
   - `A protein modification that effectively converts a SOURCE RESIDUE to MOD.`
   - `A protein modification that crosslinks two cysteine residues by formation of a chain of two or more bonded sulfur atoms.`
   - `A protein modification that effectively crosslinks an N-formyl-L-methionine residue and an L-histidine residue to form N-[(L-histidin-1'-yl)methyl]-L-methionine.`
@@ -59,25 +63,3 @@ ambiguity: `2-pyrrolidone-5-carboxylic acid (Glu)`
 ### Molecular formula
 
 The elements have to be in alphabetical order, isotopes are ordered low to high and before the general element. Element numbers can be negative in the `DiffFormula`. Isotopes have to be encased in round brackets `(15)` and listed before elements. Elements and element amounts  have to be separated by spaces.
-
-## Issues
-- Multiple identical definitions (like `modification from DeltaMass`)
-- Cross-linker amount of residues involved inconsistencies
-- Find a better way to store the number of residues involved in a cross-linker
-- Zeros in molecular formulas are inconsistent
-- Maybe just delete all `none` entries?
-- Indicate difference between `PSI-MOD-alternate` and `PSI-MOD-label` (maybe the last one is from Unimod)
-- Ensure automatic tracking of uniprot ptmlist, unimod, and chebi
-- Some paper references might be wrong (>2008)
-- Allow both the separate steps and the end product for modifications with multiple steps.
-- Add all amino acid mutations as modification
-- List all used definition cross-references to make it easy to create a complete annotation
-- Maybe find a way of separating paper references from cross-identifiers to other databases
-- Remove subset
-
-## Validate
-- Number of digits in the masses
-- No Unimod in def cross-references
-- No Unimod EXACT synonyms
-- Internal consistency of masses/molecular formulas/smiles
-- At least two `is_a` relationships
