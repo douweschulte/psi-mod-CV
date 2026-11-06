@@ -1,8 +1,8 @@
 format-version: 1.2
-data-version: 1.39.1
-date: 06:11:2026 13:38
+data-version: 1.34.0
+date: 06:11:2026 18:38
 ontology: mod
-saved-by: douweschulte
+saved-by: Ralf Gabriels
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
 synonymtypedef: OMSSA-label "Short label from OMSSA" EXACT
